@@ -1,14 +1,27 @@
 import React from 'react';
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import TelaCadastro from './pages/TelaCadastro';
+import TelaListar from './pages/TelaListar';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Header />
+
+      <Routes>
+        <Route path='/Cadastro' element={<TelaCadastro />} />
+        <Route path='/Listar' element={<TelaListar />} />
+      </Routes>
+
+    <Footer />
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
