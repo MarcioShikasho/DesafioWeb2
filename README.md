@@ -1,3 +1,9 @@
+#Desafio Web 2
+
+#Desafio consistia em criar uma página simples de cadastro de vagas
+
+#Era necessário utilizar apenas o React.JS, com a criação de componentes, utilização de Estados e funções como salvar, deletar e listar
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
